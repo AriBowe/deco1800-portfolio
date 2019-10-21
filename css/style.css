@@ -1,0 +1,190 @@
+/* Global CSS */
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+*::selection {
+    color: #F4F4F2;
+    background-color: #7C7C7B;
+}
+
+body {
+    height: 100vh;
+    background-color: #F4F4F2;
+}
+
+li {
+    border-left: #F95738 0.4em solid;
+    list-style-type: none;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+i {
+    border: solid black !important;
+    border-width: 0 2px 2px 0 !important;
+    display: inline-block;
+    padding: 3px !important;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transition: transform 0.5s;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: transform 0.5s;
+}
+
+.closed {
+    visibility: hidden;
+    max-height: 0vh;
+    transition: max-height 0.5s, padding 0.1s 0.5s, margin 0.1s 0.5s, visibility 0.5s;
+    padding: 0%;
+    margin: 0%;
+}
+
+.closed * {
+    opacity: 0;
+    transition: opacity 0.2s !important;
+    margin: 0em;
+}
+
+h1 {
+    color: black;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2 {
+    color: #F4F4F2;
+    background-color: #7C7C7B;
+    padding: 0.2em;
+    padding-right: 0.4em;
+    margin: 0.3em;
+    margin-left: 0em;
+    font-size: 1.5em;
+    display: inline-flex;
+    white-space: nowrap;
+    width: auto;
+    /* border-left: 0.2em #7C7C7B solid;
+    border-radius: 0.1em; */
+    transition: background-color 0.5s;
+}
+
+h2:hover {
+    background-color: #F95738;
+    transition: background-color 0.5s;
+}
+
+/* Navigation CSS */
+
+header {
+    height: 10vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, #F95738, #EE964B);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+}
+
+nav {
+    position: fixed;
+    left: 0vw;
+    top: 30vh;
+    margin: 3vw;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border-left: #F95738 solid 0.2em;
+}
+
+nav div {
+    display: flex;
+    flex-direction: column;
+    /* border-left: #F95738 solid 0.2em; */
+    max-height: 20vh;
+    transition: max-height 1s, padding 0.5s, margin 0.5s;
+    margin: 0.25em 0em 0em;
+}
+
+nav div:last-child {
+    margin: 0.25em 0em 0em;
+}
+
+nav * {
+    margin: 0.25em 0em;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 1em;
+}
+
+/* nav:first-child {
+    margin-top: 0em;
+}
+
+nav:last-child {
+    margin-bottom: 0em;
+} */
+
+nav a:hover, nav button:hover {
+    /* border-left: #F95738 solid 0.4em; */
+    transition: border-left 0.5s;
+    font-weight: bold;
+}
+
+#case_study_links a:nth-of-type(1) {
+    transition: opacity 0.2s
+}
+
+#case_study_links a:nth-of-type(2) {
+    transition: opacity 0.2s 0.2s
+}
+
+#case_study_links a:nth-of-type(3) {
+    transition: opacity 0.2s 0.4s
+}
+
+#case_study_links a:nth-of-type(4) {
+    transition: opacity 0.2s 0.6s
+}
+
+
+/* Content CSS */
+
+main {
+    min-height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+main > * {
+    width: 70vw;
+    margin: 2.5vw;
+}
+
+hr {
+    height: 0em;
+    border: none;
+    border-image: linear-gradient(to right, #F95738, #EE964B) 30;
+    border-top: transparent 0.2em solid;
+}
