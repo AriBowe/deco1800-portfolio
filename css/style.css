@@ -85,10 +85,6 @@ h2 {
     transition: background-color 0.5s;
 }
 
-h2:hover {
-    background-color: #F95738;
-    transition: background-color 0.5s;
-}
 
 /* Navigation CSS */
 
