@@ -11,11 +11,11 @@
 </head>
 <body>
     <!-- Navigation content -->
-    <header>
+    <header id="header">
         <p>test</p>
     </header>
     <nav>
-        <a href="#introduction">Home</a>
+        <a href="#header">Home</a>
         <a href="#about_me">About Me</a>
         <button id="case_study_button" onclick="toggleOpen()">Case Studies <i id="open_arrow" class="arrow right"></i></button>
         <div id="case_study_links" class="closed">
@@ -28,35 +28,35 @@
     </nav>
     
     <!-- Actual content -->
-    <main>
+    <main> 
+        <article id="introduction">
+            <h1>Introduction</h1>
+        </article>
+        <hr> 
         <article id="about_me">
             <h1>About Me</h1>
             <h2>Hello, I'm Ari!</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </article>
-        <hr>
-        <article id="introduction">
-    
-        </article>    
+        </article>  
         <hr>
         <article class="case_study" id="cs1">
-        
+            <h1>Case Study One</h1>
         </article>
         <hr>
         <article class="case_study" id="cs2">
-        
+            <h1>Case Study Two</h1>
         </article>
         <hr>
         <article class="case_study" id="cs3">
-        
+            <h1>Case Study Three</h1>
         </article>
         <hr>
         <article class="case_study" id="cs4">
-        
+            <h1>Case Study Four</h1>
         </article>
         <hr>
         <article id="references">
-    
+            <h1>References</h1>
         </article>
     </main>
 
