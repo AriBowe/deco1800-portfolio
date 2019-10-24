@@ -6,4 +6,7 @@ function toggleOpen() {
 
 function largeImage() {
     $(event.target)[0].classList.toggle("fullsize")
-}
+    for (item of $(event.target).parent().siblings().children()) {
+        item.classList.remove("fullsize");
+    }
+};
