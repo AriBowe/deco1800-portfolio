@@ -3,3 +3,7 @@ function toggleOpen() {
     document.getElementById("open_arrow").classList.toggle("right")
     document.getElementById("open_arrow").classList.toggle("down")
 }
+
+function largeImage() {
+    $(event.target)[0].classList.toggle("fullsize")
+}
