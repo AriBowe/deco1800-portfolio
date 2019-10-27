@@ -29,7 +29,9 @@ body {
 }
 
 li {
-    border-left: #F95738 0.4em solid;
+    border-left: #F95738 0.2em solid;
+    margin: 0.5em;
+    padding-left: 1em;
     list-style-type: none;
 }
 

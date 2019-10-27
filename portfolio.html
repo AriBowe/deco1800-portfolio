@@ -15,18 +15,20 @@
     <header id="header">
         <h1>DECO1800 - Individual Portfolio - Ari Bowe</h1>
     </header>
-    <nav>
-        <a href="#header">Home</a>
-        <a href="#introduction">Introduction</a>
-        <button id="case_study_button" onclick="toggleOpen()">Case Studies <i id="open_arrow" class="arrow right"></i></button>
-        <div id="case_study_links" class="closed">
-            <a href="#cs1">Case Study: One</a>
-            <a href="#cs2">Case Study: Two</a>
-            <a href="#cs3">Case Study: Three</a>
-            <a href="#cs4">Case Study: Four</a>
-        </div>
-        <a href="#references">References</a>
-    </nav>
+    <aside>
+        <nav>
+            <a href="#header">Home</a>
+            <a href="#introduction">Introduction</a>
+            <button id="case_study_button" onclick="toggleOpen()">Case Studies <i id="open_arrow" class="arrow right"></i></button>
+            <div id="case_study_links" class="closed">
+                <a href="#cs1">Case Study: One</a>
+                <a href="#cs2">Case Study: Two</a>
+                <a href="#cs3">Case Study: Three</a>
+                <a href="#cs4">Case Study: Four</a>
+            </div>
+            <a href="#references">References</a>
+        </nav>
+    </aside>
     
     <!-- Actual content -->
     <main> 
@@ -149,24 +151,61 @@
         <article class="case_study" id="cs4">
             <h1>Case Study Four: Portfolio</h1>
             <h2>Evidence Of Contribution</h2>
+            <p>The portfolio assignment was written entirely by me, as is required is in the Portfolio & Participation Brief. In order to allow to easily keep my portfolio files up to date on both my laptop and desktop computers, and as a backup in the case of drive failure, I created a private Github repository for my portfolio. The commit logs of this repository show how I am the only person to contribute towards this project.</p>
+            <div class="lightbox">
+                <div class="lightbox_item">
+                    <img src="images/portfolio_git.PNG" onclick="largeImage()" alt="A screenshot of the portfolio Github repository">
+                </div>
+            </div>
             <br>
+            <p>All the content in the portfolio was either created by me or has been referenced in the <a href="#references">References</a> section of the portfolio. This content was gradually written over the course of working on the portfolio, and as such no planning documents or drafts exist. I sketched a rough mockup of my planned layout for the portfolio before creation, and have placed this below. All other design changes were made gradually and were not specifically documented as I felt they were too minor to be worth documenting.</p>
+            <br>
+            <div class="lightbox">
+                <div class="lightbox_item">
+                    <img src="images/portfolio_rough_mockup.jpg" onclick="largeImage()" alt="A screenshot of the portfolio Github repository">
+                </div>
+            </div>
             <h2>Discussion Of Design Process</h2>
+            <p>The design process for the portfolio was very simple, mostly owing to the fact the the design itself was relatively uncomplicated. I started by sketching a layout which I felt was easy to use and interesting, and then simply began to work on it, refining as issues occurred to me. There were very few large changes, and it is debatable if any could be called major. The most visually striking change made was to remove the border and background colour of the navigation menu and articles, as I felt that it was distracting and detracted from the site's experience. Testing was performed on various people who agreed to participate in a short test, before answering a short questionnaire. The answers were recorded, and the feedback was then used to streamline and fine-tune the site.</p>
+            <br>
+            <p>The tasks asked of testers were simple, and involved finding specific areas or performing simple tasks, before being allowed to browse the portfolio at their own discretion. The questionnaire given to testers was equally simple, and the whole testing process took only 10 - 15 minutes. The following questions were asked:</p>
+            <ul>
+                <li>How would you rate the visuals design? (1-5, 1 being very bad and 5 being very good)</li>
+                <li>How would you rate the layout? (1-5, 1 being very bad and 5 being very good)</li>
+                <li>How would you rate the content? (1-5, 1 being very bad and 5 being very good)</li>
+                <li>Is there anything you thought needed improvement?</li>
+                <li>Is there anything you thought was missing?</li>
+            </ul>
+            <p>After perfoming user testing the feedback was applied to the site, and the visual difference can be seen below</p>
+            <div class="lightbox">
+                <div class="lightbox_item">
+                    <img src="images/portfolio_working.PNG" onclick="largeImage()" alt="A screenshot of the portfolio before applying feedback">
+                </div>
+                <div class="lightbox_item">
+                    <img src="images/portfolio_working.PNG" onclick="largeImage()" alt="A screenshot of the portfolio after applying feedback">
+                </div>
+            </div>
+            <p>TO BE COMPLETED</p>
             <br>
             <h2>Reflection On Design</h2>
+            <p>TO BE COMPLETED</p>
         </article>
         <hr>
         <article id="references">
             <h1>References</h1>
             <h2>JavaScript</h2>
+            <ul>
+                <li><a href="https://jquery.com/">jQuery 3.4.1</a></li>
+            </ul>
             <br>
             <h2>CSS</h2>
             <ul>
                 <li><a href="https://www.w3schools.com/howto/howto_css_arrows.asp">CSS Arrows - W3Schools</a></li>
             </ul>
             <br>
-            <h2>Images</h2>
+            <!-- <h2>Images</h2>
             <br>
-            <h2>Other</h2>
+            <h2>Other</h2> -->
         </article>
     </main>
 
