@@ -130,6 +130,9 @@ h2 {
     transition: max-height 0.5s, max-width 0.5s !important;
 }
 
+a {
+    color: #F95738;
+}
 
 /* Navigation CSS */
 
@@ -227,4 +230,41 @@ hr {
     border: none;
     border-image: linear-gradient(to right, #F95738, #EE964B) 30;
     border-top: transparent 0.2em solid;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+}
+
+.ratings > .rating_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10vw;
+}
+
+.ratings > .rating_item > h2 {
+    flex: 1;
+    margin: 0.5em;
+}
+
+.ratings > .rating_item > h2 {
+    margin: 0.5em;
+}
+
+.ratings > .rating_item > div { 
+    height: 0.5em;
+    margin: 0.5em;
+    flex: 4;
+    background-color: #7C7C7B;
+    border-radius: 0.5em;
+}
+
+.ratings > .rating_item > div > div {
+    background: linear-gradient(to right, #F95738, #EE964B);
+    width: 0%;
+    height: 100%;
+    border-radius: 0.5em;
 }
