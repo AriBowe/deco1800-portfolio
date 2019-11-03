@@ -1,4 +1,4 @@
-// Toggles the nav case study section
+// Toggles the nav case study section and rotates the arrow
 function toggleOpen() {
     document.getElementById("case_study_links").classList.toggle("closed");
     document.getElementById("open_arrow").classList.toggle("right")
