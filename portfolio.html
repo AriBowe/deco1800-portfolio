@@ -19,7 +19,8 @@
         <nav>
             <a href="#header">Home</a>
             <a href="#introduction">Introduction</a>
-            <button id="case_study_button" onclick="toggleOpen()">Case Studies <i id="open_arrow" class="arrow right"></i></button>
+            <a href="#introduction">About Me</a>
+            <button id="case_study_button" onclick="toggleOpen()">Case Studies <p id="open_arrow" class="arrow right"></p></button>
             <div id="case_study_links" class="closed">
                 <a href="#cs1">Case Study: One</a>
                 <a href="#cs2">Case Study: Two</a>
@@ -28,6 +29,7 @@
             </div>
             <a href="#references">References</a>
         </nav>
+        <button id="dark_mode" onclick="toggleDark()">Toggle dark mode</button>
     </aside>
     
     <!-- Actual content -->
@@ -38,6 +40,17 @@
             <p>DECO1800 was a very interesting and informative course for me. As my first major team project at university, it helped me gain an understanding of the importance of communication and planning as a team, as well as allow me to further improve on my interpersonal soft skills as well as hard skills like JavaScript proficiency.</p>
             <br>
             <p>I was very lucky to be lead a talented, proactive team where we all worked together in order to make sure that everything was completed to a high standard of quality. This was a wonderful learning experience for me, and I highly enjoyed undertaking DECO1800 this semester.</p>
+        </article>
+        <hr>
+        <article id="about_me">
+            <h1>About Me</h1>
+            <br>
+            <p>
+                <strong>Hello, I'm Ari.</strong>
+                I'm a first-year student at the University of Queensland, studying a dual Bachelors of Information Technology/Bachelors of Science (Chemistry). I've always been passionate about science and technology, and am constantly striving to learn and create new things.
+            </p>
+            <br>
+            <p>I can be contacted at <a href="mailto:a.bowe@uqconnect.edu.au">a.bowe@uqconnect.edu.au</a>.</p>
         </article>
         <hr> 
         <article class="case_study" id="cs1">
@@ -233,14 +246,16 @@
                     <img src="images/portfolio_working.PNG" onclick="largeImage()" alt="A screenshot of the portfolio before applying feedback">
                 </div>
                 <div class="lightbox_item">
-                    <img src="images/portfolio_working.PNG" onclick="largeImage()" alt="A screenshot of the portfolio after applying feedback">
+                    <img src="images/portfolio_final.PNG" onclick="largeImage()" alt="A screenshot of the portfolio after applying feedback">
                 </div>
             </div>
             <br>
-            <p>TO BE COMPLETED</p>
+            <p>At first it appears there is very little difference between the two screenshots, as many of the changes made were subtle. User feedback primarily focused on small spacing or positioning errors that users detected over the course of reading the document. Some more major changes made were to change the side navigation from a small positioned nav element to a nav element floating in a full-size div. This ensures that the navigation buttons are always centered on the left, which had been previously bothering users. Small introductions were also added to each case study, allowing users to better understand what each study was about. Finally, a button was added to toggle the site between dark and light colour schemes. This was added in response to a tester claiming that the website was too bright if their surroundings were dark.</p>
             <br>
             <h2>Reflection On Design</h2>
             <p>Overall, I am very happy with my portfolio, as it feels responsive, interesting, and cohesive. I enjoyed working on the portfolio, and I think it was a success. I beleive my initial expectations of the portfolio were that it would be much more difficult and stressful (being positioned next to 3 exams), but due to the fact that I started work on it early I was not stressed by it in any way.</p>
+            <br>
+            <p>This assignment has been a good learning experience, as it allowed me to apply the knowledge I learnt throughout the course to a smaller, personal project in which I was able to fine-tune and obsess over every aspect, ultimately creating a product that I am proud of and being an enjoyable experience along the way.</p>
         </article>
         <hr>
         <article id="references">

@@ -13,6 +13,18 @@ function largeImage() {
     }
 };
 
+// Dark mode
+function toggleDark() {
+    document.body.classList.toggle("dark")
+    for (item of document.querySelectorAll("h1")) {
+        item.classList.toggle("dark")
+    }
+    for (item of document.querySelectorAll("nav")) {
+        item.classList.toggle("dark")
+    }
+    document.getElementById("open_arrow").classList.toggle("dark")
+}
+
 // Fills progress bars from HTML
 $(document).ready(function(){
     var ratings = document.querySelectorAll(".rating_item > p:first-of-type");
